@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AnaEkran">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="364dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/water" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="btnUp"
+        android:text="Up"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="68dp"
+        android:onClick="btnDown"
+        android:text="Down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCalTot"
+        android:layout_width="256dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="32dp"
+        android:text="1980 kcal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCur"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="240dp"
+        android:text="  68 kg \ncurrent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toStartOf="@+id/txtAim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAim"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="64dp"
+        android:text="  72 kg \n   goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtToday"
+        android:layout_width="152dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="3dp"
+        android:text="      gained today"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCalTot" />
+
+    <TextView
+        android:id="@+id/txtCalLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="120 left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtToday" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="370dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="184dp"
+        android:text="For your health, you should drink 8 glass of water per day."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWater"
+        android:layout_width="278dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="264dp"
+        android:text="How many water that you drinked today."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.997" />
+
+    <Button
+        android:id="@+id/btnProg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF7751"
+        android:onClick="btnProg"
+        android:text="Programs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF7751"
+        android:onClick="btnEx"
+        android:text="Exercises"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRec"
+        app:layout_constraintStart_toEndOf="@+id/btnProg" />
+
+    <Button
+        android:id="@+id/btnRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FF7751"
+        android:onClick="btnRec"
+        android:text="Recipies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

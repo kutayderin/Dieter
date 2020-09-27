@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalTest</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_ana_ekran">AnaEkran</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_ekran">Ekran</string>
+    <string name="title_activity_the_screen">TheScreen</string>
+</resources>
