@@ -1,2 +1,2 @@
 # Dieter
-An android mobile application
+An android mobile application in Java.
